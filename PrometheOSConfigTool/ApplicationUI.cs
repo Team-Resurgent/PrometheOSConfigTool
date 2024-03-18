@@ -221,16 +221,6 @@ namespace PrometheOSConfigTool
                 ImGui.BeginDisabled();
             }
 
-            string[] driveSetupModes = new string[] { "HDD & DVD", "HDD & No DVD (Legacy Mode)", "HDD & No DVD (Modern Mode)", "Dual HDD" };
-            var driveSetup = (int)m_config.DriveSetup;
-            ImGui.Text("Drive Setup:");
-            ImGui.PushItemWidth(460);
-            ImGui.Combo("##driveSetup", ref driveSetup, driveSetupModes, driveSetupModes.Length);
-            ImGui.PopItemWidth();
-            m_config.DriveSetup = (byte)driveSetup;
-
-            ImGui.Spacing();
-
             string[] avCheckValues = new string[] { "AV Check Off", "AV Check On" };
             var avCheck = (int)m_config.AVCheck;
             ImGui.Text("AV Check:");
