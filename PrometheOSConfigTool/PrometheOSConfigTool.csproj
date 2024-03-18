@@ -5,7 +5,6 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-		<ApplicationIcon>..\Artwork\cerbios.ico</ApplicationIcon>
 		<PublishTrimmed>false</PublishTrimmed>
 		<PublishSingleFile Condition="'$(Configuration)' == 'Release'">true</PublishSingleFile>
 		<SelfContained Condition="'$(Configuration)' == 'Release'">true</SelfContained>
@@ -13,19 +12,13 @@
 		<PublishReadyToRun>true</PublishReadyToRun>
 		<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
 		<OutputType>WinExe</OutputType>
-		<AssemblyName>cerbiostool</AssemblyName>
+		<AssemblyName>prometheosconfigtool</AssemblyName>
 		<Platforms>x64</Platforms>
 	</PropertyGroup>
 
 	<ItemGroup>
 	  <None Remove="Resources\ARIALUNI.TTF" />
-	  <None Remove="Resources\CerbiosText.png" />
 	  <None Remove="Resources\icon.png" />
-	  <None Remove="Resources\Logo1.png" />
-	  <None Remove="Resources\Logo2.png" />
-	  <None Remove="Resources\Logo3.png" />
-	  <None Remove="Resources\Logo4.png" />
-	  <None Remove="Resources\SafeModeText.png" />
 	  <None Remove="Resources\TeamResurgent.jpg" />
 	  <None Remove="Resources\imgui-vertex.glsl" />
 	  <None Remove="Resources\imgui-frag.glsl" />
